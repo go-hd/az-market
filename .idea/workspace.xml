@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iws387pEvuMIlaJFdFhWlrLiYc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/site/assets/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/site/components/atoms" />
+      <recent name="$PROJECT_DIR$/site/components/organisms" />
+      <recent name="$PROJECT_DIR$/site/components/morques" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/site/assets/img" />
+      <recent name="$PROJECT_DIR$/site/components/atoms/logos" />
+      <recent name="$PROJECT_DIR$/site/assets/icons" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="" />
+      <created>1602829789037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602829789037</updated>
+      <workItem from="1602829790615" duration="36018000" />
+      <workItem from="1602924337947" duration="2426000" />
+      <workItem from="1603020577898" duration="4639000" />
+      <workItem from="1603086707667" duration="133000" />
+      <workItem from="1603264426308" duration="587000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1816" y="199" key="SettingsEditor/48.23.1392.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1602867793970" />
+    <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1603024804546">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup/48.23.1392.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1603024804546" />
+  </component>
+</project>

@@ -1,0 +1,66 @@
+<template>
+  <div>
+    <az-header :menu-items="menu">
+      <template slot="logo">
+        <az-logo>az-market</az-logo>
+      </template>
+    </az-header>
+    <nuxt></nuxt>
+  </div>
+</template>
+
+<script>
+import azHeader from '../components/organisms/az-header.vue'
+import azLogo from '../components/atoms/az-logo.vue'
+
+export default {
+  name: 'default',
+
+  components: {
+    azHeader,
+    azLogo,
+  },
+
+  data: () => ({
+    menu: [
+      {
+        id: 'info',
+        to: 'info',
+        text: '会社情報',
+      },
+      {
+        id: 'delivery',
+        to: 'delivery',
+        text: '配送・決済',
+      },
+      {
+        id: 'favorite',
+        to: 'https://my.bookmark.rakuten.co.jp/?func=reg&sname=AZ.MARKET+%A5%A8%A1%BC%A5%B8%A1%BC%A5%DE%A1%BC%A5%B1%A5%C3%A5%C8&surl=import-garden&shop_bid=286314&svid=201',
+        text: 'お気に入り',
+      },
+      {
+        id: 'cart',
+        to: 'https://basket.step.rakuten.co.jp/rms/mall/bs/cart/',
+        text: '買い物かご',
+      },
+    ],
+  })
+}
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw * 10 / 375);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+</style>
