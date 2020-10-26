@@ -1,7 +1,15 @@
 <template>
   <az-section class="az-ranking" title="RANKING">
     <div class="az-ranking__inner">
-      <az-image-list :items="items" :columns="items.length" link/>
+      <az-image-list :items="items" :columns="items.length" link>
+        <template #list-item="{ item }">
+          <nuxt-link tag="li" :to="item.to" class="az-ranking__list-item" :key="item.id">
+            <div class="az-ranking__rank-badge" :class="[rankClass(item.rank)]">{{ item.rank }}</div>
+            <img :src="item.img" :alt="item.text">
+            <az-text>{{ item.text }}</az-text>
+          </nuxt-link>
+        </template>
+      </az-image-list>
     </div>
   </az-section>
 </template>
@@ -9,19 +17,31 @@
 <script>
 import azImageList from '../morques/az-image-list.vue'
 import azSection from '../morques/az-section.vue'
+import azText from '../atoms/az-text.vue'
 
 export default {
   name: 'az-ranking',
 
   components: {
-    azSection,
     azImageList,
+    azSection,
+    azText,
   },
 
   props: {
     items: {
       type: Array,
       default: () => [],
+    },
+  },
+
+  methods: {
+    rankClass (rank) {
+      return {
+        'az-ranking__rank-badge--first': rank === 1,
+        'az-ranking__rank-badge--second': rank === 2,
+        'az-ranking__rank-badge--third': rank === 3,
+      }
     },
   },
 }
@@ -36,6 +56,45 @@ export default {
 
   .az-image-list {
     width: 200vw;
+  }
+
+  &__list-item {
+    padding: 0.5rem 0 0 0.5rem;
+    position: relative;
+
+    > img {
+      width: 11rem;
+      height: 11rem;
+    }
+  }
+
+  &__rank-badge {
+    width: 2rem;
+    height: 2rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    &--first {
+      background: #aeae54;
+    }
+
+    &--second {
+      background: #7F7F78;
+    }
+
+    &--third {
+      background: #660B28;
+    }
+
   }
 }
 </style>

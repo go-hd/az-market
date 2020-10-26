@@ -1,26 +1,28 @@
 <template>
   <ul class="az-image-list" :style="[listStyle]">
     <template v-for="item in items">
-      <li
-          v-if="!link"
-          :key="item.id"
-      >
-        <img :src="item.img" :alt="item.text">
-        <az-text v-if="item.hasOwnProperty('text')">
-          {{ item.text }}
-        </az-text>
-      </li>
-      <nuxt-link
-          v-else
-          tag="li"
-          :to="item.to"
-          :key="item.id"
-      >
-        <img :src="item.img" :alt="item.text">
-        <az-text v-if="item.hasOwnProperty('text')">
-          {{ item.text }}
-        </az-text>
-      </nuxt-link>
+      <slot name="list-item" :item="item">
+        <li
+            v-if="!link"
+            :key="item.id"
+        >
+          <img :src="item.img" :alt="item.text">
+          <az-text v-if="item.hasOwnProperty('text')">
+            {{ item.text }}
+          </az-text>
+        </li>
+        <nuxt-link
+            v-else
+            tag="li"
+            :to="item.to"
+            :key="item.id"
+        >
+          <img :src="item.img" :alt="item.text">
+          <az-text v-if="item.hasOwnProperty('text')">
+            {{ item.text }}
+          </az-text>
+        </nuxt-link>
+      </slot>
     </template>
   </ul>
 </template>
