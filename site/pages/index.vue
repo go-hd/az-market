@@ -4,10 +4,12 @@
     <az-topic-list :items="topics"/>
     <az-category-list :items="categories"/>
     <az-ranking :items="ranking"/>
+    <az-brand-list :items="brands"/>
   </div>
 </template>
 
 <script>
+import azBrandList from '../components/organisms/az-brand-list.vue'
 import azBrandSlide from '../components/organisms/az-brand-slide.vue'
 import azCategoryList from '../components/organisms/az-category-list.vue'
 import azRanking from '../components/organisms/az-ranking.vue'
@@ -18,6 +20,7 @@ export default {
   name: 'index',
 
   components: {
+    azBrandList,
     azBrandSlide,
     azCategoryList,
     azRanking,
@@ -169,6 +172,32 @@ export default {
         text: 'NULL ハニーシュガーワックス',
       },
     ],
+    brands: [
+      {
+        id: 'mens-null',
+        img: require('assets/img/slide-null.jpg'),
+      },
+      {
+        id: 'nalc',
+        img: require('assets/img/slide-nalc.jpg'),
+      },
+      {
+        id: 'fafra',
+        img: require('assets/img/slide-fafra.jpg'),
+      },
+      {
+        id: 'iina-style',
+        img: require('assets/img/slide-iina-style.jpg'),
+      },
+      {
+        id: 'defend-future',
+        img: require('assets/img/slide-defend-future.jpg'),
+      },
+      {
+        id: 'fixit',
+        img: require('assets/img/slide-fixit.jpg'),
+      },
+    ]
   }),
 }
 </script>

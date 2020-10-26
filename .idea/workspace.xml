@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-ranking.vueを実装">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/.nuxt/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/.nuxt/routes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-ranking.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-ranking.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-brand-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-brand-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +92,16 @@
       <workItem from="1603086707667" duration="133000" />
       <workItem from="1603264426308" duration="1055000" />
       <workItem from="1603273711549" duration="984000" />
-      <workItem from="1603680370967" duration="4202000" />
+      <workItem from="1603680370967" duration="4754000" />
     </task>
+    <task id="LOCAL-00001" summary="az-ranking.vueを実装">
+      <created>1603686639201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603686639201</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +118,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="az-ranking.vueを実装" />
+    <option name="LAST_COMMIT_MESSAGE" value="az-ranking.vueを実装" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">
