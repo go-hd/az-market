@@ -38,6 +38,7 @@ export default {
 <style lang="scss" scoped>
 .az-input {
   border: none;
+  background: none;
 
   &:focus {
     outline: none;

@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 * {
   margin: 0;
   padding: 0;
@@ -92,6 +92,10 @@ export default {
 
 html {
   font-size: calc(100vw * 10 / 375);
+
+  @media (min-width: 1200px) {
+    font-size: 10px;
+  }
 }
 
 ul {

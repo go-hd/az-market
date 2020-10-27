@@ -7,16 +7,12 @@
             tag="li"
             :key="item.id"
             :to="item.to"
-        >
-          {{ item.text }}
-        </nuxt-link>
+        >{{ item.text }}</nuxt-link>
         <li
             v-else
             :key="item.id"
             @click="go(item.to)"
-        >
-          {{ item.text }}
-        </li>
+        >{{ item.text }}</li>
       </template>
     </ul>
   </nav>
@@ -34,10 +30,10 @@ export default {
   },
 
   methods: {
-    go(url) {
+    go (url) {
       location.href = url
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -50,6 +46,30 @@ export default {
   > li {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    > li {
+      font-size: 1.2rem;
+      margin: 0;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #444444;
+      }
+
+      &:not(:last-child):after {
+        content: '/';
+        padding: 0 1em;
+        font-weight: bold;
+        cursor: default;
+      }
+    }
   }
 }
 </style>

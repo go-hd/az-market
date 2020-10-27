@@ -5,8 +5,14 @@
         <slot name="logo"/>
       </nuxt-link>
       <az-hamburger>
-        <az-menu :items="menuItems"/>
-        <az-search/>
+        <ul class="az-header__hamburger">
+          <li>
+            <az-menu :items="menuItems"/>
+          </li>
+          <li>
+            <az-search/>
+          </li>
+        </ul>
       </az-hamburger>
     </az-container>
   </header>
@@ -43,6 +49,14 @@ export default {
   position: sticky;
   top: 0;
   z-index: 100;
+
+  &__hamburger {
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-gap: 4rem;
+    }
+  }
 
   > .az-container {
     height: 7rem;
