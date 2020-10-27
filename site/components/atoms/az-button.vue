@@ -45,9 +45,16 @@ export default {
   border-radius: 0;
   border: 1px solid #707070;
   font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    background-color: #707070;
+    color: #ffffff;
   }
 
   &.small {

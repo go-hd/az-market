@@ -103,6 +103,7 @@ export default {
 
     &__list-item {
       padding: 1rem 0 0 1rem;
+      cursor: pointer;
 
       > img {
         width: 15rem;

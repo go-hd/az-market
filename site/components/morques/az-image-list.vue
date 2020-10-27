@@ -6,6 +6,7 @@
           <li
               v-if="!link"
               :key="item.id"
+              class="az-image-list__item"
           >
             <img :src="item.img" :style="{ height: _imageHeight }" :alt="item.text">
             <az-text v-if="item.hasOwnProperty('text')">
@@ -17,6 +18,7 @@
               tag="li"
               :to="item.to"
               :key="item.id"
+              class="az-image-list__item az-image-list__item--link"
           >
             <img :src="item.img" :alt="item.text">
             <az-text v-if="item.hasOwnProperty('text')">
@@ -147,7 +149,7 @@ export default {
   display: grid;
   grid-gap: 1rem;
 
-  > li > img {
+  &__item > img {
     width: 100%;
     height: 11rem;
     object-fit: cover;
@@ -155,8 +157,14 @@ export default {
 
   @media (min-width: 1200px) {
     grid-gap: 3rem;
-    > li > img {
-      height: 20rem;
+    &__item {
+      > img {
+        height: 20rem;
+      }
+
+      &--link {
+        cursor: pointer;
+      }
     }
   }
 }

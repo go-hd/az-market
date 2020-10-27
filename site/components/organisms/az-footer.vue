@@ -58,5 +58,20 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.8rem;
   }
+  
+  @media (min-width: 1200px) {
+    padding: 4rem 0;
+
+    &__nav > ul {
+      display: flex;
+      grid-gap: 4em;
+      justify-content: center;
+      font-weight: bold;
+
+      > li {
+        cursor: pointer;
+      }
+    }
+  }
 }
 </style>
