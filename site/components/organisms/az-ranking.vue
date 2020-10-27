@@ -94,7 +94,28 @@ export default {
     &--third {
       background: #660B28;
     }
+  }
 
+  @media (min-width: 1200px) {
+    .az-image-list {
+      width: 100%;
+    }
+
+    &__list-item {
+      padding: 1rem 0 0 1rem;
+
+      > img {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+
+    &__rank-badge {
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      font-size: 2rem;
+    }
   }
 }
 </style>
