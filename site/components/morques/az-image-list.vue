@@ -19,7 +19,7 @@
         >
           <img :src="item.img" :alt="item.text">
           <az-text v-if="item.hasOwnProperty('text')">
-            {{ item.text }}
+            {{ format(item.text) }}
           </az-text>
         </nuxt-link>
       </slot>
@@ -60,6 +60,12 @@ export default {
         gridTemplateColumns: `repeat(${this.columns}, 1fr)`
       }
     }
+  },
+
+  methods: {
+    format(text) {
+      return text.length > 40 ? text.slice(0, 40) + '...' : text
+    }
   }
 }
 </script>
@@ -73,6 +79,13 @@ export default {
     width: 100%;
     height: 11rem;
     object-fit: cover;
+  }
+
+  @media (min-width: 1200px) {
+    grid-gap: 3rem;
+    > li > img {
+      height: 20rem;
+    }
   }
 }
 </style>

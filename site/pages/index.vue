@@ -1,7 +1,9 @@
 <template>
   <div class="index">
     <az-brand-slide :items="slides"/>
-    <az-topic-list :items="topics"/>
+    <no-ssr>
+      <az-topic-list :items="topics"/>
+    </no-ssr>
     <az-category-list :items="categories"/>
     <az-ranking :items="ranking"/>
     <az-brand-list :items="brands"/>
@@ -61,6 +63,30 @@ export default {
       },
     ],
     topics: [
+      {
+        id: 'null-wax-renewal',
+        to: 'null-wax-renewal',
+        img: require('assets/img/topic-null-wax-renewal.jpg'),
+        text: '人気脱毛ワックス『NULL ハニーシュガーワックス』がリニューアル!',
+      },
+      {
+        id: 'nalc-wrinkle-release',
+        to: 'nalc-wrinkle-release',
+        img: require('assets/img/topic-nalc-wrinkle-release.jpg'),
+        text: '《シワを改善する×美白*1》有効成分 ナイアシンアミド配合『薬用ホワイトリンクルクリーム』8月5日発売',
+      },
+      {
+        id: 'fafra-botanical-disinfectant',
+        to: 'fafra-botanical-disinfectant',
+        img: require('assets/img/topic-fafra-botanical-disinfectant.jpg'),
+        text: '『fafra ボタニカル除菌消臭ミスト』から待望の”詰め替え用”発売',
+      },
+      {
+        id: 'fixit-make-balance-soy-release',
+        to: 'fixit-make-balance-soy-release',
+        img: require('assets/img/topic-fixit-make-balance-soy.jpg'),
+        text: 'FIXITから待望のソイプロテイン『MAKE BALANCE』が発売',
+      },
       {
         id: 'null-wax-renewal',
         to: 'null-wax-renewal',
