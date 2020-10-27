@@ -1,34 +1,46 @@
 <template>
-  <ul class="az-image-list" :style="[listStyle]">
-    <template v-for="item in items">
-      <slot name="list-item" :item="item">
-        <li
-            v-if="!link"
-            :key="item.id"
-        >
-          <img :src="item.img" :alt="item.text">
-          <az-text v-if="item.hasOwnProperty('text')">
-            {{ item.text }}
-          </az-text>
-        </li>
-        <nuxt-link
-            v-else
-            tag="li"
-            :to="item.to"
-            :key="item.id"
-        >
-          <img :src="item.img" :alt="item.text">
-          <az-text v-if="item.hasOwnProperty('text')">
-            {{ format(item.text) }}
-          </az-text>
-        </nuxt-link>
-      </slot>
-    </template>
-  </ul>
+  <no-ssr>
+    <ul class="az-image-list" :style="[listStyle]">
+      <template v-for="item in _items">
+        <slot name="list-item" :item="item">
+          <li
+              v-if="!link"
+              :key="item.id"
+          >
+            <img :src="item.img" :alt="item.text">
+            <az-text v-if="item.hasOwnProperty('text')">
+              {{ item.text }}
+            </az-text>
+          </li>
+          <nuxt-link
+              v-else
+              tag="li"
+              :to="item.to"
+              :key="item.id"
+          >
+            <img :src="item.img" :alt="item.text">
+            <az-text v-if="item.hasOwnProperty('text')">
+              {{ format(item.text) }}
+            </az-text>
+          </nuxt-link>
+        </slot>
+      </template>
+    </ul>
+  </no-ssr>
 </template>
 
 <script>
 import azText from '../atoms/az-text.vue'
+import debounce from 'lodash.debounce'
+
+const responsiveValidator = function (value, nullable = false) {
+  const isNumber = Number.isInteger(value)
+  const isNull = nullable && value === null
+  const hasSP = value && value.hasOwnProperty('sp') && Number.isInteger(value.sp)
+  const hasPC = value && value.hasOwnProperty('pc') && Number.isInteger(value.pc)
+
+  return isNull || isNumber || (hasSP && hasPC)
+}
 
 export default {
   name: 'az-image-list',
@@ -49,24 +61,72 @@ export default {
     },
 
     columns: {
+      default: 2,
+      validator: (value) => responsiveValidator(value),
+    },
+
+    count: {
+      default: null,
+      validator: (value) => responsiveValidator(value, true),
+    },
+
+    breakpoint: {
       type: Number,
-      default: 2
-    }
+      default: 1200,
+    },
   },
 
+  data: () => ({
+    width: 0,
+  }),
+
   computed: {
-    listStyle() {
+    listStyle () {
       return {
-        gridTemplateColumns: `repeat(${this.columns}, 1fr)`
+        gridTemplateColumns: `repeat(${this._columns}, 1fr)`,
       }
-    }
+    },
+
+    device () {
+      return this.width >= this.breakpoint ? 'pc' : 'sp'
+    },
+
+    _columns () {
+      if (Number.isInteger(this.columns)) {
+        return this.columns
+      }
+      return this.columns[this.device]
+    },
+
+    _count () {
+      if (this.count === null) {
+        return this.items.length
+      }
+      if (Number.isInteger(this.columns)) {
+        return this.count
+      }
+      return this.count[this.device]
+    },
+
+    _items () {
+      return this.items.slice(0, this._count)
+    },
+  },
+
+  mounted () {
+    this.width = window.innerWidth
+    window.addEventListener('resize', debounce(this.handleResize))
   },
 
   methods: {
-    format(text) {
+    format (text) {
       return text.length > 40 ? text.slice(0, 40) + '...' : text
-    }
-  }
+    },
+
+    handleResize () {
+      this.width = window.innerWidth
+    },
+  },
 }
 </script>
 

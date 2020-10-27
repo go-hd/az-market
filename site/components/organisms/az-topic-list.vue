@@ -3,16 +3,15 @@
     <az-image-list
         class="az-topic-list__image-list az-topic-list__image-list"
         link
-        :items="filteredItems"
-        :columns="columns"
+        :items="items"
+        :columns="{ sp: 2, pc: 4 }"
+        :count="{ sp: 4, pc: 8 }"
     />
     <az-button to="topics">SEE MORE</az-button>
   </az-section>
 </template>
 
 <script>
-import debounce from 'lodash.debounce'
-
 import azButton from '../atoms/az-button.vue'
 import azSection from '../morques/az-section.vue'
 import azImageList from '../morques/az-image-list.vue'
@@ -33,32 +32,6 @@ export default {
     },
   },
 
-  data: () => ({
-    width: window.innerWidth
-  }),
-
-  computed: {
-    filteredItems() {
-      if (this.width < 1200) {
-        return this.items.slice(0, 4)
-      }
-      return this.items.slice(0, 8)
-    },
-
-    columns() {
-      return this.width < 1200 ? 2 : 4
-    }
-  },
-
-  mounted() {
-    window.addEventListener('resize', debounce(this.handleResize))
-  },
-
-  methods: {
-    handleResize() {
-      this.width = window.innerWidth
-    }
-  }
 }
 </script>
 

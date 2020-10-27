@@ -1,9 +1,7 @@
 <template>
   <div class="index">
     <az-brand-slide :items="slides"/>
-    <no-ssr>
-      <az-topic-list :items="topics"/>
-    </no-ssr>
+    <az-topic-list :items="topics"/>
     <az-category-list :items="categories"/>
     <az-ranking :items="ranking"/>
     <az-brand-list :items="brands"/>
