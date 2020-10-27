@@ -1,6 +1,10 @@
 <template>
   <az-section class="az-brand-list" title="BRAND">
-    <az-image-list :items="items"/>
+    <az-image-list
+        :items="items"
+        :columns="{ sp: 2, pc: 3 }"
+        :image-height="{ sp: 110, pc: 250 }"
+    />
   </az-section>
 </template>
 

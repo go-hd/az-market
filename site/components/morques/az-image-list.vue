@@ -7,7 +7,7 @@
               v-if="!link"
               :key="item.id"
           >
-            <img :src="item.img" :alt="item.text">
+            <img :src="item.img" :style="{ height: _imageHeight }" :alt="item.text">
             <az-text v-if="item.hasOwnProperty('text')">
               {{ item.text }}
             </az-text>
@@ -34,12 +34,12 @@ import azText from '../atoms/az-text.vue'
 import debounce from 'lodash.debounce'
 
 const responsiveValidator = function (value, nullable = false) {
-  const isNumber = Number.isInteger(value)
+  const isInt = Number.isInteger(value)
   const isNull = nullable && value === null
   const hasSP = value && value.hasOwnProperty('sp') && Number.isInteger(value.sp)
   const hasPC = value && value.hasOwnProperty('pc') && Number.isInteger(value.pc)
 
-  return isNull || isNumber || (hasSP && hasPC)
+  return isNull || isInt || (hasSP && hasPC)
 }
 
 export default {
@@ -68,6 +68,11 @@ export default {
     count: {
       default: null,
       validator: (value) => responsiveValidator(value, true),
+    },
+
+    imageHeight: {
+      default: 110,
+      validator: (value) => responsiveValidator(value),
     },
 
     breakpoint: {
@@ -106,6 +111,13 @@ export default {
         return this.count
       }
       return this.count[this.device]
+    },
+
+    _imageHeight () {
+      if (Number.isInteger(this.imageHeight)) {
+        return this.imageHeight / 10 + 'rem'
+      }
+      return this.imageHeight[this.device] / 10 + 'rem'
     },
 
     _items () {

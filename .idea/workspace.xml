@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-ranking.vueをPC表示に対応">
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-topic-list.vueをPC表示に対応">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/atoms/az-heading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/atoms/az-heading.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-topic-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-topic-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-brand-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-brand-list.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <workItem from="1603086707667" duration="133000" />
       <workItem from="1603264426308" duration="1055000" />
       <workItem from="1603273711549" duration="984000" />
-      <workItem from="1603680370967" duration="22803000" />
+      <workItem from="1603680370967" duration="24209000" />
     </task>
     <task id="LOCAL-00001" summary="az-ranking.vueを実装">
       <created>1603686639201</created>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603782335574</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="az-topic-list.vueをPC表示に対応">
+      <created>1603789034108</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603789034110</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,11 +194,11 @@
     <MESSAGE value="az-footer.vueを実装" />
     <MESSAGE value="az-header.vueをPC表示に対応" />
     <MESSAGE value="az-brand-slide.vueをPC表示に対応" />
-    <MESSAGE value="az-topic-list.vueをPC表示に対応" />
     <MESSAGE value="画像を圧縮" />
     <MESSAGE value="az-category-list.vueをPC表示に対応" />
     <MESSAGE value="az-ranking.vueをPC表示に対応" />
-    <option name="LAST_COMMIT_MESSAGE" value="az-ranking.vueをPC表示に対応" />
+    <MESSAGE value="az-topic-list.vueをPC表示に対応" />
+    <option name="LAST_COMMIT_MESSAGE" value="az-topic-list.vueをPC表示に対応" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">
