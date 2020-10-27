@@ -6,6 +6,7 @@
         :items="items"
         :columns="{ sp: 2, pc: 4 }"
         :count="{ sp: 4, pc: 8 }"
+        :image-height="{ sp: 110, pc: 200 }"
     />
     <az-button to="topics">SEE MORE</az-button>
   </az-section>

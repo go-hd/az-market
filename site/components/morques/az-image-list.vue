@@ -20,7 +20,7 @@
               :key="item.id"
               class="az-image-list__item az-image-list__item--link"
           >
-            <img :src="item.img" :alt="item.text">
+            <img :src="item.img" :style="{ height: _imageHeight }" :alt="item.text">
             <az-text v-if="item.hasOwnProperty('text')">
               {{ format(item.text) }}
             </az-text>

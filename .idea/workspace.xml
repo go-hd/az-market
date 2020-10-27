@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-footerをPC表示に対応&#10;・ナビゲーション要素をcursor: pointerに変更">
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-image-list.vueを修正">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-topic-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-topic-list.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,7 @@
       <workItem from="1603086707667" duration="133000" />
       <workItem from="1603264426308" duration="1055000" />
       <workItem from="1603273711549" duration="984000" />
-      <workItem from="1603680370967" duration="25557000" />
+      <workItem from="1603680370967" duration="25982000" />
     </task>
     <task id="LOCAL-00001" summary="az-ranking.vueを実装">
       <created>1603686639201</created>
@@ -181,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603791455963</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="az-image-list.vueを修正">
+      <created>1603791829802</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603791829802</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,9 +220,14 @@
     <MESSAGE value="az-topic-list.vueをPC表示に対応" />
     <MESSAGE value="az-brand-list.vueをPC表示に対応" />
     <MESSAGE value="az-footerをPC表示に対応&#10;・ナビゲーション要素をcursor: pointerに変更" />
-    <option name="LAST_COMMIT_MESSAGE" value="az-footerをPC表示に対応&#10;・ナビゲーション要素をcursor: pointerに変更" />
+    <MESSAGE value="az-image-list.vueを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="az-image-list.vueを修正" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-3692" y="123" width="1672" height="857" key="DiffContextDialog" timestamp="1603791918195">
+      <screen x="-3792" y="23" width="1872" height="1057" />
+    </state>
+    <state x="-3692" y="123" width="1672" height="857" key="DiffContextDialog/0.23.1440.877/-3792.23.1872.1057/-1920.23.1920.1057@-3792.23.1872.1057" timestamp="1603791918195" />
     <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
