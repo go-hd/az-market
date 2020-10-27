@@ -232,5 +232,9 @@ export default {
 .index {
   display: grid;
   grid-gap: 4rem 0;
+
+  @media (min-width: 1200px) {
+    grid-gap: 8rem;
+  }
 }
 </style>

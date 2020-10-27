@@ -33,11 +33,17 @@ export default {
 .az-category-list {
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
 
     > li > .az-button {
       width: 100%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

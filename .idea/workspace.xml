@@ -19,25 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-brand-slide.vueをPC表示に対応">
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="画像を圧縮">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/ranking-null-wax.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/ranking-null-wax.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/slide-defend-future.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/slide-defend-future.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/slide-fafra.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/slide-fafra.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/slide-fixit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/slide-fixit.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/slide-iina-style.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/slide-iina-style.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/slide-nalc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/slide-nalc.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/slide-null.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/slide-null.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/topic-fafra-botanical-disinfectant.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/topic-fafra-botanical-disinfectant.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/topic-fixit-make-balance-soy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/topic-fixit-make-balance-soy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/topic-nalc-wrinkle-release.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/topic-nalc-wrinkle-release.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/assets/img/topic-null-wax-renewal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/site/assets/img/topic-null-wax-renewal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/atoms/az-text.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/atoms/az-text.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-image-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-topic-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-topic-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-category-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-category-list.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/site/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +95,7 @@
       <workItem from="1603086707667" duration="133000" />
       <workItem from="1603264426308" duration="1055000" />
       <workItem from="1603273711549" duration="984000" />
-      <workItem from="1603680370967" duration="17357000" />
+      <workItem from="1603680370967" duration="17713000" />
     </task>
     <task id="LOCAL-00001" summary="az-ranking.vueを実装">
       <created>1603686639201</created>
@@ -147,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603770924549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="az-topic-list.vueをPC表示に対応">
+      <created>1603774567543</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603774567543</updated>
+    </task>
+    <task id="LOCAL-00007" summary="画像を圧縮">
+      <created>1603774578382</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603774578382</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +170,9 @@
     <MESSAGE value="az-footer.vueを実装" />
     <MESSAGE value="az-header.vueをPC表示に対応" />
     <MESSAGE value="az-brand-slide.vueをPC表示に対応" />
-    <option name="LAST_COMMIT_MESSAGE" value="az-brand-slide.vueをPC表示に対応" />
+    <MESSAGE value="az-topic-list.vueをPC表示に対応" />
+    <MESSAGE value="画像を圧縮" />
+    <option name="LAST_COMMIT_MESSAGE" value="画像を圧縮" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">
