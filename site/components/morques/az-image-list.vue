@@ -151,20 +151,13 @@ export default {
 
   &__item > img {
     width: 100%;
-    height: 11rem;
     object-fit: cover;
   }
 
   @media (min-width: 1200px) {
     grid-gap: 3rem;
-    &__item {
-      > img {
-        height: 20rem;
-      }
-
-      &--link {
-        cursor: pointer;
-      }
+    &__item--link {
+      cursor: pointer;
     }
   }
 }
