@@ -67,9 +67,14 @@ export default {
 
 <style lang="scss" scoped>
 .az-slide {
-  $slide-height: 35rem;
+  --az-slide-height: 35rem;
+
+  @media (min-width: 1200px) {
+    --az-slide-height: calc(100vh - 15rem);
+  }
+
   position: relative;
-  height: $slide-height;
+  height: var(--az-slide-height);
 
   > li {
     position: absolute;
@@ -82,7 +87,7 @@ export default {
 
     > img {
       width: 100%;
-      height: $slide-height;
+      height: var(--az-slide-height);
       object-fit: cover;
     }
   }

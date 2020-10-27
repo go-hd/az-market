@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-footer.vueを実装">
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-header.vueをPC表示に対応">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/atoms/az-container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/atoms/az-container.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/atoms/az-input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/atoms/az-input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/morques/az-hamburger.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-hamburger.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/morques/az-menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-menu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/morques/az-slide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-slide.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-brand-slide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-brand-slide.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,7 @@
       <workItem from="1603086707667" duration="133000" />
       <workItem from="1603264426308" duration="1055000" />
       <workItem from="1603273711549" duration="984000" />
-      <workItem from="1603680370967" duration="13397000" />
+      <workItem from="1603680370967" duration="13936000" />
     </task>
     <task id="LOCAL-00001" summary="az-ranking.vueを実装">
       <created>1603686639201</created>
@@ -122,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603766995264</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="az-header.vueをPC表示に対応">
+      <created>1603770371113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603770371113</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +147,8 @@
     <MESSAGE value="az-ranking.vueを実装" />
     <MESSAGE value="az-brand-list.vueを実装" />
     <MESSAGE value="az-footer.vueを実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="az-footer.vueを実装" />
+    <MESSAGE value="az-header.vueをPC表示に対応" />
+    <option name="LAST_COMMIT_MESSAGE" value="az-header.vueをPC表示に対応" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">

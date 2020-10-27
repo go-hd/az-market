@@ -63,6 +63,16 @@ export default {
     grid-gap: 0.3rem 1rem;
     align-items: center;
 
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 0;
+
+      > li {
+        flex-basis: 100%;
+      }
+    }
+
     > li {
       text-align: center;
       padding-bottom: 0.7rem;
