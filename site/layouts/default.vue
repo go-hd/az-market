@@ -1,15 +1,17 @@
 <template>
   <div>
-    <az-header :menu-items="menu">
+    <az-header :menu-items="headerMenu">
       <template slot="logo">
         <az-logo>az-market</az-logo>
       </template>
     </az-header>
     <nuxt></nuxt>
+    <az-footer :menu-items="footerMenu"/>
   </div>
 </template>
 
 <script>
+import azFooter from '../components/organisms/az-footer.vue'
 import azHeader from '../components/organisms/az-header.vue'
 import azLogo from '../components/atoms/az-logo.vue'
 
@@ -17,12 +19,13 @@ export default {
   name: 'default',
 
   components: {
+    azFooter,
     azHeader,
     azLogo,
   },
 
   data: () => ({
-    menu: [
+    headerMenu: [
       {
         id: 'info',
         to: 'info',
@@ -44,7 +47,39 @@ export default {
         text: '買い物かご',
       },
     ],
-  })
+    footerMenu: [
+      {
+        id: 'delivery',
+        to: '',
+        text: '送料・配送について',
+      },
+      {
+        id: 'privacy',
+        to: '',
+        text: '個人情報について',
+      },
+      {
+        id: 'payment',
+        to: '',
+        text: 'お支払いについて',
+      },
+      {
+        id: 'cancel',
+        to: '',
+        text: '返品・交換・キャンセルについて',
+      },
+      {
+        id: 'mail-error',
+        to: '',
+        text: 'メールが届かない場合',
+      },
+      {
+        id: 'contact',
+        to: '',
+        text: 'お問い合わせ',
+      }
+    ],
+  }),
 }
 </script>
 

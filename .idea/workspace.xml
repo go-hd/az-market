@@ -19,10 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-ranking.vueを実装">
+    <list default="true" id="8f630eac-93a7-4b0b-9760-f1ddb1db8ddf" name="デフォルト変更リスト" comment="az-brand-list.vueを実装">
+      <change afterPath="$PROJECT_DIR$/site/components/morques/az-copyright.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-brand-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-brand-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/.nuxt/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/.nuxt/routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/.nuxt/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/.nuxt/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/atoms/az-heading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/atoms/az-heading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/morques/az-section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/morques/az-section.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/components/organisms/az-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/components/organisms/az-footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/site/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/nuxt.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +50,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iws387pEvuMIlaJFdFhWlrLiYc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="追加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -67,15 +76,15 @@
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/site/components/atoms" />
-      <recent name="$PROJECT_DIR$/site/components/organisms" />
-      <recent name="$PROJECT_DIR$/site/components/morques" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/site/assets/img" />
       <recent name="$PROJECT_DIR$/site/components/atoms/logos" />
       <recent name="$PROJECT_DIR$/site/assets/icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/site/components/morques" />
+      <recent name="$PROJECT_DIR$/site/components/atoms" />
+      <recent name="$PROJECT_DIR$/site/components/organisms" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -92,7 +101,7 @@
       <workItem from="1603086707667" duration="133000" />
       <workItem from="1603264426308" duration="1055000" />
       <workItem from="1603273711549" duration="984000" />
-      <workItem from="1603680370967" duration="4754000" />
+      <workItem from="1603680370967" duration="10141000" />
     </task>
     <task id="LOCAL-00001" summary="az-ranking.vueを実装">
       <created>1603686639201</created>
@@ -101,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603686639201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="az-brand-list.vueを実装">
+      <created>1603687108294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603687108295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,13 +137,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="az-ranking.vueを実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="az-ranking.vueを実装" />
+    <MESSAGE value="az-brand-list.vueを実装" />
+    <option name="LAST_COMMIT_MESSAGE" value="az-brand-list.vueを実装" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1816" y="199" key="SettingsEditor" timestamp="1602867793970">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="1816" y="199" key="SettingsEditor/48.23.1392.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1602867793970" />
+    <state x="584" y="291" key="Vcs.Push.Dialog.v2" timestamp="1603761134699">
+      <screen x="48" y="23" width="1872" height="1057" />
+    </state>
+    <state x="584" y="291" key="Vcs.Push.Dialog.v2/48.23.1872.1057/1920.23.1920.1057@48.23.1872.1057" timestamp="1603761134699" />
     <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1603024804546">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>

@@ -1,6 +1,6 @@
 <template>
   <section class="az-section">
-    <az-heading v-if="title.length">{{ title }}</az-heading>
+    <az-heading v-if="title.length" underline center>{{ title }}</az-heading>
     <az-container>
       <slot />
     </az-container>
@@ -32,9 +32,5 @@ export default {
 .az-section {
   display: grid;
   grid-gap: 3rem;
-
-  .az-heading {
-    margin: auto;
-  }
 }
 </style>

@@ -8,5 +8,9 @@ export default {
     link: [
       { rel: 'stylesheet', href: 'https://use.typekit.net/wzh1ssz.css' }
     ]
+  },
+
+  env: {
+    shopName: process.env.SHOP_NAME || 'AZ Market'
   }
 }
