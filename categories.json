@@ -1,0 +1,177 @@
+[
+  {
+    "name": "スキンケア",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000200/",
+    "children": [
+      {
+        "name": "化粧水",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000214/"
+      },
+      {
+        "name": "乳液",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000215/"
+      },
+      {
+        "name": "クレンジング",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000216/"
+      },
+      {
+        "name": "洗顔",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000217/"
+      },
+      {
+        "name": "オールインワン",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000218/"
+      },
+      {
+        "name": "日焼け止め",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000219/"
+      },
+      {
+        "name": "美容液",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000220/"
+      }
+    ]
+  },
+  {
+    "name": "TV・オーディオ",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000201/",
+    "children": [
+      {
+        "name": "スピーカー",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000203/"
+      },
+      {
+        "name": "イヤホン・ヘッドホン",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000204/"
+      },
+      {
+        "name": "トランスミッター",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000205/"
+      }
+    ]
+  },
+  {
+    "name": "スマートフォン・PC・タブレット",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000202/",
+    "children": [
+      {
+        "name": "スマホグッズ",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000206/"
+      },
+      {
+        "name": "PCグッズ",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000207/"
+      }
+    ]
+  },
+  {
+    "name": "ボディ/ヘアケア",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000208/",
+    "children": [
+      {
+        "name": "除毛・脱毛剤",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000221/"
+      },
+      {
+        "name": "乳液",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000222/"
+      },
+      {
+        "name": "ハンドクリーム",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000223/"
+      },
+      {
+        "name": "練り香水",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000224/"
+      },
+      {
+        "name": "制汗剤",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000225/"
+      }
+    ]
+  },
+  {
+    "name": "バスケア",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000209/",
+    "children": [
+      {
+        "name": "ボディソープ",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000226/"
+      }
+    ]
+  },
+  {
+    "name": "メイクアップ",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000210/",
+    "children": [
+      {
+        "name": "BBクリーム",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000227/"
+      },
+      {
+        "name": "コンシーラー",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000228/"
+      }
+    ]
+  },
+  {
+    "name": "生活雑貨",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000211/",
+    "children": [
+      {
+        "name": "シューパウダー",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000229/"
+      },
+      {
+        "name": "除菌スプレー",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000230/"
+      }
+    ]
+  },
+  {
+    "name": "フィットネス",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000212/",
+    "children": [
+      {
+        "name": "アクセサリー",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000232/"
+      },
+      {
+        "name": "ホエイプロテイン",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000237/"
+      },
+      {
+        "name": "ソイプロテイン",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000238/"
+      }
+    ]
+  },
+  {
+    "name": "防災関連グッズ",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000213/",
+    "children": [
+      {
+        "name": "防災セット",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000233/"
+      },
+      {
+        "name": "非常食セット・保存食",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000234/"
+      },
+      {
+        "name": "ヘルメット",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000235/"
+      },
+      {
+        "name": "その他防災用品",
+        "url": "https://item.rakuten.co.jp/import-garden/c/0000000236/"
+      }
+    ]
+  },
+  {
+    "name": "その他",
+    "url": "https://item.rakuten.co.jp/import-garden/c/0000000001/",
+    "children": []
+  }
+]
