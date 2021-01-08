@@ -4,14 +4,17 @@
     <az-container>
       <nav class="az-footer__nav">
         <ul>
-          <nuxt-link
-              tag="li"
-              :to="item.to"
+          <li
               v-for="item in menuItems"
               :key="item.id"
           >
-            {{ item.text }}
-          </nuxt-link>
+            <a
+                class="az-footer__link"
+                :href="item.to"
+            >
+              {{ item.text }}
+            </a>
+          </li>
         </ul>
       </nav>
     </az-container>
@@ -58,13 +61,18 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.8rem;
   }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
   
   @media (min-width: 1200px) {
     padding: 4rem 0;
 
     &__nav > ul {
       display: flex;
-      grid-gap: 4em;
+      gap: 4em;
       justify-content: center;
       font-weight: bold;
 

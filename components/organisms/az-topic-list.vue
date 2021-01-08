@@ -8,6 +8,12 @@
         :count="{ sp: 4, pc: 8 }"
         :image-height="{ sp: 110, pc: 200 }"
     />
+    <az-button
+        class="az-topic-list__see-more-button"
+        to="topics"
+    >
+      SEE MORE
+    </az-button>
   </az-section>
 </template>
 
@@ -37,10 +43,14 @@ export default {
 
 <style lang="scss" scoped>
 .az-topic-list {
-  .az-button {
+  &__see-more-button {
     padding: 1em 3em;
     display: block;
     margin: 3rem auto;
+
+    @media (min-width: 1200px) {
+      width: 25rem;
+    }
   }
 }
 </style>

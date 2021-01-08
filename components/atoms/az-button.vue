@@ -19,7 +19,7 @@
     <slot/>
   </a>
   <nuxt-link
-      tag="button"
+      tag="a"
       v-else
       v-on="$listeners"
       v-bind="$props"
@@ -60,6 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 .az-button {
+  text-align: center;
   background-color: #ffffff;
   padding: 1em;
   border-radius: 0;

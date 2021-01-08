@@ -19,6 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .fa-heart {
-  width: 40px;
+  height: 1em;
 }
 </style>

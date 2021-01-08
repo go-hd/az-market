@@ -1,7 +1,14 @@
 <template>
   <ul class="az-slide">
     <li v-for="item in items" :key="item.id" :class="{active: isActive(item)}">
-      <img :src="item.img" :alt="item.description">
+      <a v-if="item.hasOwnProperty('to')" :href="item.to">
+        <img
+            class="az-slide__image"
+            :src="item.img"
+            :alt="item[descriptionKey]"
+        >
+      </a>
+      <img v-else :src="item.img" :alt="item[descriptionKey]">
     </li>
   </ul>
 </template>
@@ -20,11 +27,16 @@ export default {
       type: Number,
       default: 10000,
     },
+
+    descriptionKey: {
+      type: String,
+      default: 'name',
+    },
   },
 
   data: () => ({
     active: null,
-    interval: null
+    interval: null,
   }),
 
   mounted () {
@@ -35,10 +47,10 @@ export default {
   watch: {
     active: {
       immediate: true,
-      handler(value) {
+      handler (value) {
         this.$emit('transition', value)
-      }
-    }
+      },
+    },
   },
 
   methods: {
@@ -60,7 +72,7 @@ export default {
 
     getActive () {
       return this.active
-    }
+    },
   },
 }
 </script>
@@ -79,17 +91,19 @@ export default {
   > li {
     position: absolute;
     opacity: 0;
-    transition: opacity 1s;
+    transition: all 1s;
+    visibility: hidden;
 
     &.active {
       opacity: 1;
+      visibility: visible;
     }
+  }
 
-    > img {
-      width: 100%;
-      height: var(--az-slide-height);
-      object-fit: cover;
-    }
+  &__image {
+    width: 100%;
+    height: var(--az-slide-height);
+    object-fit: cover;
   }
 }
 </style>

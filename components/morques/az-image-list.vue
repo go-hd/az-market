@@ -8,9 +8,11 @@
             class="az-image-list__item"
         >
           <img :src="item.img" :style="{ height: _imageHeight }" :alt="item.text">
-          <az-text v-if="item.hasOwnProperty('text')">
-            {{ item.text }}
-          </az-text>
+          <slot name="list-item-description" :item="item">
+            <az-text v-if="item.hasOwnProperty('text')">
+              {{ format(item.text) }}
+            </az-text>
+          </slot>
         </li>
         <li
             v-else
@@ -23,9 +25,11 @@
               :href="item.to"
           >
             <img :src="item.img" :style="{ height: _imageHeight }" :alt="item.text">
-            <az-text v-if="item.hasOwnProperty('text')">
-              {{ format(item.text) }}
-            </az-text>
+            <slot name="list-item-description" :item="item">
+              <az-text v-if="item.hasOwnProperty('text')">
+                {{ format(item.text) }}
+              </az-text>
+            </slot>
           </a>
           <nuxt-link
               v-else
@@ -34,9 +38,11 @@
               class="az-image-list__link"
           >
             <img :src="item.img" :style="{ height: _imageHeight }" :alt="item.text">
-            <az-text v-if="item.hasOwnProperty('text')">
-              {{ format(item.text) }}
-            </az-text>
+            <slot name="list-item-description" :item="item">
+              <az-text v-if="item.hasOwnProperty('text')">
+                {{ format(item.text) }}
+              </az-text>
+            </slot>
           </nuxt-link>
         </li>
       </slot>
@@ -73,6 +79,11 @@ export default {
     link: {
       type: Boolean,
       default: false,
+    },
+
+    textLength: {
+      type: Number,
+      default: 40,
     },
 
     columns: {
@@ -147,7 +158,8 @@ export default {
 
   methods: {
     format (text) {
-      return text.length > 40 ? text.slice(0, 40) + '...' : text
+      if (!this.textLength) return text
+      return text.length > this.textLength ? text.slice(0, this.textLength) + '...' : text
     },
 
     handleResize () {
@@ -162,9 +174,17 @@ export default {
   display: grid;
   grid-gap: 1rem;
 
-  &__item img {
-    width: 100%;
-    object-fit: cover;
+  &__item {
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__link {

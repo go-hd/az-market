@@ -19,6 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .fa-search-solid {
-  width: 40px;
+  height: 1em;
 }
 </style>

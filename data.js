@@ -1,36 +1,3 @@
-export const slides = [
-  {
-    id: 'mens-null',
-    img: require('assets/img/slide-null.jpg'),
-    description: 'MENS NULL',
-  },
-  {
-    id: 'nalc',
-    img: require('assets/img/slide-nalc.jpg'),
-    description: 'NALC',
-  },
-  {
-    id: 'fafra',
-    img: require('assets/img/slide-fafra.jpg'),
-    description: 'fafra',
-  },
-  {
-    id: 'iina-style',
-    img: require('assets/img/slide-iina-style.jpg'),
-    description: 'iina-style',
-  },
-  {
-    id: 'defend-future',
-    img: require('assets/img/slide-defend-future.jpg'),
-    description: 'Defend Future',
-  },
-  {
-    id: 'fixit',
-    img: require('assets/img/slide-fixit.jpg'),
-    description: 'FIXIT',
-  },
-]
-
 export const topics = [
   {
     id: 'null-wrinkle-cream-release',
@@ -89,16 +56,6 @@ export const categories = [
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000200/',
   },
   {
-    'id': 'c0000000201',
-    'text': 'TV・オーディオ',
-    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000201/',
-  },
-  {
-    'id': 'c0000000202',
-    'text': 'スマートフォン・PC・タブレット',
-    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000202/',
-  },
-  {
     'id': 'c0000000208',
     'text': 'ボディ/ヘアケア',
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000208/',
@@ -114,11 +71,6 @@ export const categories = [
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000210/',
   },
   {
-    'id': 'c0000000211',
-    'text': '生活雑貨',
-    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000211/',
-  },
-  {
     'id': 'c0000000212',
     'text': 'フィットネス',
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000212/',
@@ -127,6 +79,21 @@ export const categories = [
     'id': 'c0000000213',
     'text': '防災関連グッズ',
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000213/',
+  },
+  {
+    'id': 'c0000000211',
+    'text': '生活雑貨',
+    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000211/',
+  },
+  {
+    'id': 'c0000000201',
+    'text': 'TV・オーディオ',
+    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000201/',
+  },
+  {
+    'id': 'c0000000202',
+    'text': 'スマートフォン・PC',
+    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000202/',
   },
 ]
 
@@ -178,32 +145,87 @@ export const ranking = [
 export const brands = [
   {
     id: 'mens-null',
+    name: 'MENS NULL',
     img: require('assets/img/slide-null.jpg'),
     to: 'https://item.rakuten.co.jp/import-garden/c/0000000239/',
-  },
-  {
-    id: 'nalc',
-    img: require('assets/img/slide-nalc.jpg'),
-    to: 'https://item.rakuten.co.jp/import-garden/c/0000000240/',
-  },
-  {
-    id: 'fafra',
-    img: require('assets/img/slide-fafra.jpg'),
-    to: 'https://item.rakuten.co.jp/import-garden/c/0000000241/',
-  },
-  {
-    id: 'iina-style',
-    img: require('assets/img/slide-iina-style.jpg'),
-    to: 'https://item.rakuten.co.jp/import-garden/c/0000000242/',
-  },
-  {
-    id: 'defend-future',
-    img: require('assets/img/slide-defend-future.jpg'),
-    to: 'https://item.rakuten.co.jp/import-garden/c/0000000243/',
+    description: `カッコ良く、そして美しい。
+男でも美しさをかねそなえる時代へ。
+
+ずっとカッコ良くいたいからスキンケアする。
+もっと自信を持ちたいからメイクする。
+堂々と振る舞いたいからボディケアする。
+
+おしゃれで、キマっていて、美しい。
+今までを超える、男になろう。`
   },
   {
     id: 'fixit',
+    name: 'FIXIT',
     img: require('assets/img/slide-fixit.jpg'),
     to: 'https://item.rakuten.co.jp/import-garden/c/0000000244/',
+    description: `昨日よりも強く、しなやかに。
+日々の積み重ねであなたのカラダは変わる。
+
+日々のトレーニングを無駄にしたくない。
+いつまでも好きな自分でいたい。
+年齢なんて関係ない。
+さあ、新しいあなたへの第一歩を今日踏み出そう。`
+  },
+  {
+    id: 'nalc',
+    name: 'NALC',
+    img: require('assets/img/slide-nalc.jpg'),
+    to: 'https://item.rakuten.co.jp/import-garden/c/0000000240/',
+    description: `ジェンダーを超えて、年齢を超えて、肌質を超えて。
+外面からも内面からも、美しさを引き出そう。
+
+どんな価値観をもっていてもいい。
+いつからスタートしてもいい。
+一人で悩まなくてもいい。
+
+実力のある化粧品と、NALCと、自分らしく生きていく。`
+  },
+  {
+    id: 'defend-future',
+    name: 'Defend Future',
+    img: require('assets/img/slide-defend-future.jpg'),
+    to: 'https://item.rakuten.co.jp/import-garden/c/0000000243/',
+    description: `想像もつかなかった「いつか」を今、考えてみよう
+
+災害が起こり、電気、ガスがとまる。水道が使えなくなる。
+流行り病による混乱、食品の品薄、偏る食生活。
+
+たいせつな人を守りたい
+漠然とした不安を取り除きたい
+些細なきっかけでもいい
+
+今、「いつか」の為の安心を備えよう。`
+  },
+  {
+    id: 'fafra',
+    name: 'fafra',
+    img: require('assets/img/slide-fafra.jpg'),
+    to: 'https://item.rakuten.co.jp/import-garden/c/0000000241/',
+    description: `毎日使うものにワクワクしていますか？
+
+ただ消費するだけではつまらない
+感性をくすぐる何かがあれば
+より日常は彩られる
+
+機能・素材・価格・デザイン
+なんでもいい
+毎日使うものに安心と楽しみを`
+  },
+  {
+    id: 'iina-style',
+    name: 'iina-style',
+    img: require('assets/img/slide-iina-style.jpg'),
+    to: 'https://item.rakuten.co.jp/import-garden/c/0000000242/',
+    description: `音楽は精神と感覚の世界を結ぶ。
+モノクロの世界に高揚を与え、
+生命を吹き込む。
+
+音には想像以上の価値がある。
+操作一つでその意味を創り出す存在に。`
   },
 ]

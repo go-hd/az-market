@@ -1,6 +1,10 @@
 <template>
   <div class="az-brand-slide">
-    <az-slide ref="slide" :items="items" @transition="active = $event"/>
+    <az-slide
+        ref="slide"
+        :items="items"
+        @transition="active = $event"
+    />
     <az-container>
       <ul class="az-brand-slide__control">
         <li

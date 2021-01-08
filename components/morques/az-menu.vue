@@ -11,8 +11,11 @@
         <li
             v-else
             :key="item.id"
-            @click="go(item.to)"
-        >{{ item.text }}</li>
+        >
+          <a :href="item.to">
+            {{ item.text }}
+          </a>
+        </li>
       </template>
     </ul>
   </nav>
@@ -46,6 +49,11 @@ export default {
   > li {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
+
+    > a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 
   @media (min-width: 1200px) {

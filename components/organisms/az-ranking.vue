@@ -64,6 +64,12 @@ export default {
     padding: 0.5rem 0 0 0.5rem;
     position: relative;
 
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
     a {
       color: black;
       text-decoration: none;
