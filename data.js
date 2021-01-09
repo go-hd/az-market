@@ -51,6 +51,11 @@ export const topics = [
 
 export const categories = [
   {
+    'id': 'c0000000212',
+    'text': 'フィットネス',
+    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000212/',
+  },
+  {
     'id': 'c0000000200',
     'text': 'スキンケア',
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000200/',
@@ -71,19 +76,9 @@ export const categories = [
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000210/',
   },
   {
-    'id': 'c0000000212',
-    'text': 'フィットネス',
-    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000212/',
-  },
-  {
     'id': 'c0000000213',
     'text': '防災関連グッズ',
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000213/',
-  },
-  {
-    'id': 'c0000000211',
-    'text': '生活雑貨',
-    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000211/',
   },
   {
     'id': 'c0000000201',
@@ -94,6 +89,11 @@ export const categories = [
     'id': 'c0000000202',
     'text': 'スマートフォン・PC',
     'to': 'https://item.rakuten.co.jp/import-garden/c/0000000202/',
+  },
+  {
+    'id': 'c0000000211',
+    'text': '生活雑貨',
+    'to': 'https://item.rakuten.co.jp/import-garden/c/0000000211/',
   },
 ]
 
@@ -144,6 +144,19 @@ export const ranking = [
 
 export const brands = [
   {
+    id: 'fixit',
+    name: 'FIXIT',
+    img: require('assets/img/slide-fixit.jpg'),
+    to: 'https://item.rakuten.co.jp/import-garden/c/0000000244/',
+    description: `昨日よりも強く、しなやかに。
+日々の積み重ねであなたのカラダは変わる。
+
+日々のトレーニングを無駄にしたくない。
+いつまでも好きな自分でいたい。
+年齢なんて関係ない。
+さあ、新しいあなたへの第一歩を今日踏み出そう。`
+  },
+  {
     id: 'mens-null',
     name: 'MENS NULL',
     img: require('assets/img/slide-null.jpg'),
@@ -157,19 +170,6 @@ export const brands = [
 
 おしゃれで、キマっていて、美しい。
 今までを超える、男になろう。`
-  },
-  {
-    id: 'fixit',
-    name: 'FIXIT',
-    img: require('assets/img/slide-fixit.jpg'),
-    to: 'https://item.rakuten.co.jp/import-garden/c/0000000244/',
-    description: `昨日よりも強く、しなやかに。
-日々の積み重ねであなたのカラダは変わる。
-
-日々のトレーニングを無駄にしたくない。
-いつまでも好きな自分でいたい。
-年齢なんて関係ない。
-さあ、新しいあなたへの第一歩を今日踏み出そう。`
   },
   {
     id: 'nalc',
@@ -202,6 +202,18 @@ export const brands = [
 今、「いつか」の為の安心を備えよう。`
   },
   {
+    id: 'iina-style',
+    name: 'iina-style',
+    img: require('assets/img/slide-iina-style.jpg'),
+    to: 'https://item.rakuten.co.jp/import-garden/c/0000000242/',
+    description: `音楽は精神と感覚の世界を結ぶ。
+モノクロの世界に高揚を与え、
+生命を吹き込む。
+
+音には想像以上の価値がある。
+操作一つでその意味を創り出す存在に。`
+  },
+  {
     id: 'fafra',
     name: 'fafra',
     img: require('assets/img/slide-fafra.jpg'),
@@ -215,17 +227,5 @@ export const brands = [
 機能・素材・価格・デザイン
 なんでもいい
 毎日使うものに安心と楽しみを`
-  },
-  {
-    id: 'iina-style',
-    name: 'iina-style',
-    img: require('assets/img/slide-iina-style.jpg'),
-    to: 'https://item.rakuten.co.jp/import-garden/c/0000000242/',
-    description: `音楽は精神と感覚の世界を結ぶ。
-モノクロの世界に高揚を与え、
-生命を吹き込む。
-
-音には想像以上の価値がある。
-操作一つでその意味を創り出す存在に。`
   },
 ]

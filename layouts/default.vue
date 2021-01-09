@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <az-header :menu-items="headerMenu">
+  <div class="az-market__container" :class="containerClass">
+    <az-header :menu-items="headerMenu" >
       <template slot="logo">
         <az-logo>az-market</az-logo>
       </template>
@@ -68,6 +68,14 @@ export default {
       },
     ],
   }),
+
+  computed: {
+    containerClass() {
+      return {
+        'az-market__container--stop-scrolling': this.$store.state.menu.visible
+      }
+    }
+  }
 }
 </script>
 
@@ -80,7 +88,6 @@ export default {
 
 html {
   font-family: sans-serif;
-
   font-size: calc(100vw * 10 / 375);
 
   @media (min-width: 1200px) {
@@ -107,6 +114,19 @@ ul {
 </style>
 
 <style lang="scss" scoped>
+.az-market__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+
+  &--stop-scrolling {
+    overflow: hidden;
+  }
+}
+
 .scroll-to-top {
   position: fixed;
   right: 2rem;

@@ -61,7 +61,7 @@ export default {
   background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
 
   display: grid;
-  gap: 0.5rem;
+  grid-gap: 0.5rem;
 
   &.blue {
     background: linear-gradient(135deg, #dcf7f2, #d7e7fd);
@@ -76,7 +76,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+
+    > *:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
   &__icon {

@@ -2,7 +2,7 @@
   <div class="az-hamburger" :class="[{show}]">
     <az-hamburger-icon
         class="az-hamburger__icon"
-        @click="show = !show"
+        @click="$store.dispatch('menu/toggle')"
         :open="show"
     />
     <az-container class="az-hamburger__container az-hamburger__container--sp">
@@ -21,13 +21,15 @@ import azHamburgerIcon from '../atoms/az-hamburger-icon.vue'
 export default {
   name: 'az-hamburger',
 
-  data: () => ({
-    show: false
-  }),
-
   components: {
     azContainer,
     azHamburgerIcon
+  },
+
+  computed: {
+    show() {
+      return this.$store.state.menu.visible
+    }
   }
 }
 </script>

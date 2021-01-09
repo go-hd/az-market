@@ -71,18 +71,29 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 2.5rem;
+
+    > *:not(:last-child) {
+      margin-right: 2rem;
+    }
 
     @media (min-width: 1200px) {
       flex-direction: row-reverse;
       justify-content: flex-start;
+
+      > *:not(:last-child) {
+        margin-right: 0;
+      }
+
+      > *:not(:first-child) {
+        margin-right: 2rem;
+      }
     }
   }
 
   &__hamburger {
     @media (min-width: 1200px) {
       display: grid;
-      grid-template-columns: 1fr 200px;
+      grid-template-columns: 1fr 250px;
       grid-gap: 4rem;
     }
   }

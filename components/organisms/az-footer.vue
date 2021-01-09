@@ -72,7 +72,7 @@ export default {
 
     &__nav > ul {
       display: flex;
-      gap: 4em;
+      grid-gap: 4em;
       justify-content: center;
       font-weight: bold;
 

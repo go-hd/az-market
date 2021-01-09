@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 .az-opt-in {
   display: grid;
-  gap: 2rem;
+  grid-gap: 2rem;
 
   &__link {
     color: rgba(0, 0, 0, 0.75);

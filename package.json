@@ -2,9 +2,9 @@
   "name": "az-market-front",
   "version": "1.0.0",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development && nuxt",
-    "generate": "nuxt generate",
-    "build": "nuxt build"
+    "dev": "cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 nuxt",
+    "generate": "nuxt generate && cp ./dist/index.html ./dist/index_sp.html",
+    "build": "nuxt build && cp ./dist/index.html ./dist/index_sp.html"
   },
   "license": "MIT",
   "dependencies": {
