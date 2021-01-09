@@ -25,19 +25,21 @@ export default {
 
   data: () => ({
     isShown: false,
+    azMarketContainer: null
   }),
 
   mounted () {
-    window.addEventListener('scroll', debounce(this.handleScroll))
+    this.azMarketContainer = document.querySelector('.az-market__container')
+    this.azMarketContainer.addEventListener('scroll', debounce(this.handleScroll, 100))
   },
 
   methods: {
     handleScroll () {
-      this.isShown = window.scrollY >= this.startPosition
+      this.isShown = this.azMarketContainer.scrollTop >= this.startPosition
     },
 
     handleClick () {
-      window.scrollTo({
+      this.azMarketContainer.scrollTo({
         top: 0,
         behavior: 'smooth',
       })
@@ -48,7 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 .az-scroll-to-top {
-  z-index: 99999;
+  z-index: 9999;
   &__button {
     border: none;
     background-color: white;

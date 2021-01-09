@@ -65,7 +65,7 @@ export default {
   background: rgba(255, 255, 255, 0.78);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 99999;
 
   &__left {
     display: flex;
