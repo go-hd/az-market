@@ -1,14 +1,22 @@
 <template>
   <ul class="az-slide">
     <li v-for="item in items" :key="item.id" :class="{active: isActive(item)}">
-      <a v-if="item.hasOwnProperty('to')" :href="item.to">
+      <component
+          class="az-slide__item-wrapper"
+          :is="wrapper(item).tag"
+          v-bind="wrapper(item).props"
+      >
         <img
             class="az-slide__image"
             :src="item.img"
             :alt="item[descriptionKey]"
         >
-      </a>
-      <img v-else :src="item.img" :alt="item[descriptionKey]">
+        <div
+            class="az-slide__content"
+        >
+          <slot name="content" :item="item"/>
+        </div>
+      </component>
     </li>
   </ul>
 </template>
@@ -73,6 +81,21 @@ export default {
     getActive () {
       return this.active
     },
+
+    wrapper (item) {
+      if (item.hasOwnProperty('to')) {
+        return {
+          tag: 'a',
+          props: { href: item.to },
+        }
+      }
+      else {
+        return {
+          tag: 'div',
+          props: null
+        }
+      }
+    },
   },
 }
 </script>
@@ -101,9 +124,20 @@ export default {
   }
 
   &__image {
+    display: block;
     width: 100%;
     height: var(--az-slide-height);
     object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: initial;
+    text-decoration: none;
   }
 }
 </style>
