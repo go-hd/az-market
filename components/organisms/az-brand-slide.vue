@@ -9,7 +9,7 @@
       >
         <template #content="{ item }">
           <div class="az-brand-slide__content">
-            <az-container>
+            <az-container class="az-brand-slide__content__container">
               <az-heading class="az-brand-slide__brand-name hidden-sp">
                 {{ item.name }}
               </az-heading>
@@ -97,9 +97,15 @@ export default {
 
     @media (min-width: 1200px) {
       background: rgba(0, 0, 0, 0.6);
-      padding: 25rem 0;
       text-align: center;
       transition: opacity 0.5s ease-in-out;
+
+      &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
       &:not(:hover) {
         opacity: 0;
