@@ -1,28 +1,29 @@
 <template>
   <div class="az-brand-slide">
-    <az-slide
-        ref="slide"
-        :items="items"
-        @transition="active = $event"
-    >
-      <template #content="{ item }">
-        <div class="az-brand-slide__content">
-          <az-container>
-            <az-heading class="az-brand-slide__brand-name hidden-sp">
-              {{ item.name }}
-            </az-heading>
-            <az-text
-                class="az-brand-slide__concept"
-                v-html="item.description.replaceAll('\n', '<br>')"
-            />
-            <az-text class="az-brand-slide__view-more hidden-sp">
-              VIEW MORE
-            </az-text>
-          </az-container>
-        </div>
-      </template>
-    </az-slide>
     <az-container>
+      <az-slide
+          class="az-brand-slide__slide"
+          ref="slide"
+          :items="items"
+          @transition="active = $event"
+      >
+        <template #content="{ item }">
+          <div class="az-brand-slide__content">
+            <az-container>
+              <az-heading class="az-brand-slide__brand-name hidden-sp">
+                {{ item.name }}
+              </az-heading>
+              <az-text
+                  class="az-brand-slide__concept"
+                  v-html="item.description.replaceAll('\n', '<br>')"
+              />
+              <az-text class="az-brand-slide__view-more hidden-sp">
+                VIEW MORE
+              </az-text>
+            </az-container>
+          </div>
+        </template>
+      </az-slide>
       <ul class="az-brand-slide__control">
         <li
             v-for="item in items"
@@ -80,6 +81,10 @@ export default {
 
 <style lang="scss" scoped>
 .az-brand-slide {
+  &__slide {
+    margin: 0 -1.5rem;
+  }
+
   &__content {
     position: absolute;
     top: 0;

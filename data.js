@@ -171,16 +171,16 @@ export const brands = [
     name: 'Defend Future',
     img: require('assets/img/slide-defend-future.jpg'),
     to: 'https://item.rakuten.co.jp/import-garden/c/0000000243/',
-    description: `未来を守るために、今できることを
-日本発、防災グッズブランド
-Defend Future（ディフェンドフューチャー）`,
+    description: `未来を守るために、今できることを 
+防災グッズブランド Defend Future（ディフェンドフューチャー）`,
   },
   {
     id: 'iina-style',
     name: 'iina-style',
     img: require('assets/img/slide-iina-style.jpg'),
     to: 'https://item.rakuten.co.jp/import-garden/c/0000000242/',
-    description: `モノクロの毎日に、BGMを`,
+    description: `モノクロの毎日に、BGMを
+ガジェットブランド iina-style（イイナスタイル）`,
   },
   {
     id: 'fafra',

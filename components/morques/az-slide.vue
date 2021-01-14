@@ -105,7 +105,7 @@ export default {
   --az-slide-height: 35rem;
 
   @media (min-width: 1200px) {
-    --az-slide-height: calc(100vh - 15rem);
+    --az-slide-height: calc(100vh - 30rem);
   }
 
   position: relative;

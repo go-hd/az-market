@@ -47,7 +47,7 @@ export default {
   grid-gap: 4rem 0;
 
   @media (min-width: 1200px) {
-    grid-gap: 8rem;
+    grid-gap: 6rem;
   }
 }
 </style>
